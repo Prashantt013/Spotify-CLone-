@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- <a href="#home" class="logo"> <img src="images/logo.png" alt=""> </a> -->
+
+        <!-- <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form> -->
+
+        <!-- <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="./login.html" id="signupicon">sign up</a>
+            <a href="./login2.html" id="signupicon"> login </a>
+        </div> -->
+
+    </header>
+    <div class="sidebar">
+        <div class="logo">
+            <a href="">
+                <img src="./images/Spotify Logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon-image">
+                            <img src="Spotify Images/house.png" alt="Search" class="icon-img">
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon-image">
+                            <img src="Spotify Images/search.png" alt="Search" class="icon-img">
+                        </span>
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./music-player-master/index.html">
+                        <span class="icon-image">
+                            <img src="Spotify Images/book.png" alt="Search" class="icon-img">
+                        </span>
+                        <span>Your Library</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon-image">
+                            <img src="Spotify Images/music.png" alt="Search" class="icon-img">
+                        </span>
+                        <span>Create Playlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="liked-songs-btn">
+                        <span class="icon-image">
+                            <img src="Spotify Images/heart1.png" alt="Search" class="icon-img">
+                        </span>
+                        <span>Liked Songs</span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="liked-songs" id="liked-songs-container">
+            <div class="item">
+                <img src="images/singer (7).jpeg" alt="Arijit Singh" class="icon-img">
+                <div class="play" data-audio-src="path/to/Arijit-Singh-song.mp3"></div>
+                <h4>Arijit Singh</h4>
+                <p>Top Hits of Arijit Singh</p>
+            </div>
+
+            <div class="item">
+                <img src="images/singer (3).jpg" alt="B... Praak" class="icon-img">
+                <div class="play" data-audio-src="path/to/B Praak.mp3"></div>
+                <h4>B... Praak</h4>
+                <p>Top Hits of B... Praak</p>
+            </div>
+
+            <div class="item">
+                <img src="images/singer (4).jpg" alt="ATIF_ASLAM" class="icon-img">
+                <div class="play" data-audio-src="path/to/Atif-Aslam-songs.mp3"></div>
+                <h4>ATIF ASLAM</h4>
+                <p>Top Hits of ATIF ASLAM</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="policies">
+        <ul>
+            <li>
+                <a href="">Cookies</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+        </ul>
+    </div> -->
+
+
+    </div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+                <!-- <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button> -->
+            </div>
+            <div class="audio-controls">
+                <audio id="audio-element" controls></audio>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="./SignUp/index.html">Sign Up</a>
+                    </li>
+                </ul>
+                <button type="button">Login</button>
+            </div>
+
+
+        </div>
+
+        <div class="spotify-playlists">
+            <h2>Spotify Playlists</h2>
+
+            <div class="list">
+                <div class="item">
+                    <img src="./images/Playlist (6).jpeg" />
+
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\New music (1).mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>New Music Hindi</h4>
+                    <p>New top Hindi Hits Playlists!!</p>
+                </div>
+                <div class="item">
+                    <img src="./images/playlist (9).jpeg" />
+                    <div class="play" data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\MUSH.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Bollywood Mush</h4>
+                    <p>Soft/ Classic Song of Bollywood</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/Playlist (7).jpeg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\New music (2).mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>New Music</h4>
+                    <p>Latest Hindi & Bollywood Hits</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/playlist.jpg" />
+                    <div class="play" data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\BDM.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>BDM Hits</h4>
+                    <p>Top Bollywood Dance Music</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/playlist (8).jpeg" />
+                    <div class="play" data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\ROCK.m4a">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Lets Rock</h4>
+                    <p>Rock with Bollywood</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/Playlist (3).jpeg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\top hits hindi.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Top Hits</h4>
+                    <p>TOP Todays Hits (Hindi)</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/Playlist (2).jpeg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\tamil hit.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Top Hits</h4>
+                    <p>Top Hits of Tamil</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="spotify-playlists">
+            <h2>Top Singers</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="./images/singer (7).jpeg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Salman Khan.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>This is Arijit Singh</h4>
+                    <p>Best of Arijit Singh </p>
+                    <button class="like-button">Liked</button>
+
+                </div>
+
+                <div class="item">
+                    <img src="./images/singer (3).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\B Praak.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>This is B... Praak</h4>
+                    <p>Superhit songs B Praak</p>
+                    <button class="like-button">Liked</button>
+
+                </div>
+
+                <div class="item">
+                    <img src="./images/singer (2).jpeg" />
+                    <div class="play" data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Neha.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>This is Neha Kakkar</h4>
+                    <p>All time Hits of Neha Kakkar</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/singer (4).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\ATIF_ASLAM.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>This is Atif Aslam</h4>
+                    <p>Atif Aslam Top Hits</p>
+                    <button class="like-button">Liked</button>
+
+                </div>
+
+                <div class="item">
+                    <img src="./images/singer (8).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Darshan_Raval.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>This is Darshan Raval</h4>
+                    <p>Top Hits Darshan Raval</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/singer (1).jpeg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Rahat Fateh Ali khan.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Rahat Fateh Ali Khan</h4>
+                    <p>Rahat Fateh Ali Khan Popular Hits</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/singer (2).jpeg" />
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>This is Neha Kakkar</h4>
+                    <p>Best Songs of Neha Kakkar</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="spotify-playlists">
+            <h2>RADIO</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="./images/en (1).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Salman Khan.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Salman Khan Radio</h4>
+                    <p>Hit songs of Salman Khan</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/en (2).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Aamir Khan.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Aamir Khan Radio</h4>
+                    <p>Hit songs of Aamir KHan</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/en (8).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Emraan Hasmi.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Emraan Hashmi</h4>
+                    <p>Hit songs of Emraan Hashmi</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/en(11).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\shraddha.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>Shraddha Kapoor Radio</h4>
+                    <p>Hit Songs of Shraddha Kapoor</p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/en (9).jpg" />
+                    <div class="play" data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Srk.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>SRK Radio</h4>
+                    <p>Shah Rukh Khan Hit Songs </p>
+                </div>
+
+                <div class="item">
+                    <img src="./images/en(10).jpg" />
+                    <div class="play"
+                        data-audio-src="D:\Users\Public\Downloads\PROJECT- Spotify_Clone\Music\Deepika.mp3">
+                        <span class="fa fa-play"></span>
+                    </div>
+
+                    <h4>Deepika Padukone</h4>
+                    <p>All time Hits of Deepika Padukone</p>
+                </div>
+
+
+            </div>
+
+            <hr>
+        </div>
+
+    </div>
+
+    <div class="preview">
+        <div class="text">
+            <h6>PRASHANT</h6>
+            <p>This the mini project "Spotify Clone".</p>
+        </div>
+        <div class="button">
+            <button type="button">NEED HELP..??</button>
+        </div>
+    </div>
+
+
+    </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
